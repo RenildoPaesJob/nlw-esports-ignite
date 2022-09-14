@@ -1,3 +1,4 @@
+
 /**
  * COMPONENTES E PROPIEDADES NO REACT
  *  -> são como tags e atributos no html
@@ -10,27 +11,36 @@
  * 
  */
 
-interface ButtonsProps {
-  title: string;
-}
+/* interface ButtonsProps {
+//   title: string;
+// }
 
-function Button(props: ButtonsProps){
-  return (
-    <button 
-      title={props.title}
-    >
-      post
-    </button>
-  )
-}
+// function Button(props: ButtonsProps){
+//   return (
+//     <button 
+//       title={props.title}
+//     >
+//       post
+//     </button>
+//   )
+*/
+import './styles/main.css';
+import LogoImg from './assets/logo-nlw-esports.svg';
 
 function App() {
   return (
-    <>
-      <Button title="post 1"/>
-      <Button title="post 2"/>
-      <Button title="post 3"/>
-    </>
+    <div 
+      className="max-w-[1344px] mx-auto flex flex-col items-center my-20"
+    >
+      <img src={LogoImg} />
+
+      <h1
+        className="text-6xl text-white font-black mt-20"
+      >
+        Seu <span className="text-transparent bg-nlw-gradient bg-clip-text">duo</span> está aqui.
+      </h1>
+
+    </div>
   )
 }
 
